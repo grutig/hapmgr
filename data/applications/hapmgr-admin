@@ -1,0 +1,12 @@
+#!/bin/bash
+export DISPLAY="${DISPLAY:-:0}"
+export QT_X11_NO_MITSHM=1
+
+if [ -n "$PKEXEC_UID" ]; then
+    ORIGINAL_USER=$(getent passwd "$PKEXEC_UID" | cut -d: -f1)
+    ORIGINAL_HOME=$(getent passwd "$PKEXEC_UID" | cut -d: -f6)
+    export XAUTHORITY="$ORIGINAL_HOME/.Xauthority"
+    export XDG_RUNTIME_DIR="/run/user/$PKEXEC_UID"
+fi
+
+exec /usr/bin/hapmgr "$@"

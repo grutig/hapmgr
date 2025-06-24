@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hamradio Software Manager (Admin)
+Comment=A tool to manage ham radio applications install / uninstall (requires root access)
+Exec=pkexec /usr/bin/hapmgr-admin
+Icon=hapmgr
+Terminal=false
+Categories=System;Settings;
+Keywords=python;qt5;admin;hamradio;
+StartupNotify=true

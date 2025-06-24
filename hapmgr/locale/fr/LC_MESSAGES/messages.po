@@ -1,0 +1,645 @@
+# French translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-06-21 11:31+0200\n"
+"PO-Revision-Date: 2025-06-21 09:19+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: HamPkgMgr.py:179 HamPkgMgr.py:218
+msgid "Not Installed"
+msgstr "Non installé"
+
+#: HamPkgMgr.py:206
+msgid "Checking package status..."
+msgstr "Vérification de l'état du package ..."
+
+#: HamPkgMgr.py:218
+msgid "Installed"
+msgstr "Installé"
+
+#: HamPkgMgr.py:230 HamPkgMgr.py:331 mainwindow_ui.py:114
+msgid "Ready"
+msgstr "Prêt"
+
+#: HamPkgMgr.py:254 HamPkgMgr.py:269
+msgid "No packages selected"
+msgstr "Aucun package sélectionné"
+
+#: HamPkgMgr.py:255 HamPkgMgr.py:270
+msgid "Please select packages first"
+msgstr "Veuillez d'abord sélectionner les packages"
+
+#: HamPkgMgr.py:259
+msgid "Install the following packages?"
+msgstr "Installer les packages suivants?"
+
+#: HamPkgMgr.py:260
+msgid "Confirm Installation"
+msgstr "Confirmer l'installation"
+
+#: HamPkgMgr.py:274
+msgid "Remove the following packages?"
+msgstr "Supprimer les packages suivants?"
+
+#: HamPkgMgr.py:275
+msgid "Confirm Removal"
+msgstr "Confirmer le retrait"
+
+#: HamPkgMgr.py:287
+msgid "Installing"
+msgstr "Installation"
+
+#: HamPkgMgr.py:287
+msgid "Removing"
+msgstr "Enlèvement"
+
+#: mainwindow_ui.py:106
+msgid "Ham Radio Package Manager"
+msgstr "Ham Radio Package Manager"
+
+#: mainwindow_ui.py:107
+msgid "Package Selection"
+msgstr "Sélection de package"
+
+#: mainwindow_ui.py:108
+msgid "Select All"
+msgstr "Sélectionnez tout"
+
+#: mainwindow_ui.py:109
+msgid "Deselect All"
+msgstr "Désélectionner tout"
+
+#: mainwindow_ui.py:110
+msgid "Refresh Status"
+msgstr "Rafraîchir l'état"
+
+#: mainwindow_ui.py:111
+msgid "Operations"
+msgstr "Opérations"
+
+#: mainwindow_ui.py:112
+msgid "Install Selected"
+msgstr "Installer sélectionné"
+
+#: mainwindow_ui.py:113
+msgid "Remove Selected"
+msgstr "Supprimer sélectionné"
+
+#: mainwindow_ui.py:115
+msgid "Output"
+msgstr "Sortir"
+
+#: packages.py:4 packages.py:5
+msgid "Tiny and efficient software defined radio receiver - utilities"
+msgstr "Récepteur radio défini de logiciels minuscules et efficaces - Utilitaires"
+
+#: packages.py:6
+msgid "HF+VHF software defined radio receiver - user runtime"
+msgstr "Récepteur radio défini par logiciel HF + VHF - Exécution de l'utilisateur"
+
+#: packages.py:7
+msgid "Morse code training program"
+msgstr "Programme de formation du code Morse"
+
+#: packages.py:8
+msgid "antenna radiation pattern visualization software"
+msgstr "logiciel de visualisation du modèle de rayonnement d'antenne"
+
+#: packages.py:9
+msgid "digipeater for APRS"
+msgstr "Digipeater pour APRS"
+
+#: packages.py:10
+msgid "APRS Digipeater and iGate"
+msgstr "APRS Digipeater et Igate"
+
+#: packages.py:11
+msgid "AX.25 ham radio applications"
+msgstr "AX.25 applications radio amateur"
+
+#: packages.py:12
+msgid "tools for AX.25 interface configuration"
+msgstr "Outils pour la configuration de l'interface AX.25"
+
+#: packages.py:13
+msgid "tools for AX.25 interface configuration -- X11-based"
+msgstr "Outils pour la configuration de l'interface AX.25 - basée sur X11"
+
+#: packages.py:14
+msgid "hamradio packet utilities for fbb"
+msgstr "Utilitaires Hamradio Packet pour FBB"
+
+#: packages.py:15
+msgid "Mail user agent for ax.25 users, accessed via a node frontend"
+msgstr ""
+"Mail utilisateur de l'agent pour AX.25 utilisateurs, accessible via un "
+"frontend de nœud"
+
+#: packages.py:16
+msgid "Nuand bladeRF software-defined radio device"
+msgstr "Nuand Bladerf Radio Defined Device Defined Defined Device"
+
+#: packages.py:17
+msgid "practice test for the Canadian Amateur Radio exam"
+msgstr "Test de pratique pour l'examen de radio amateur canadien"
+
+#: packages.py:18
+msgid "Configuration tool for amateur radios"
+msgstr "Outil de configuration pour les radios amateurs"
+
+#: packages.py:19
+msgid "Gui based tool to compare two text streams"
+msgstr "Outil basé sur l'interface graphique pour comparer deux flux de texte"
+
+#: packages.py:20
+msgid "GUI based tool to compare two RTTY streams"
+msgstr "Outil basé sur l'interface graphique pour comparer deux flux RTTY"
+
+#: packages.py:21
+msgid "Advanced logging program for hamradio operators"
+msgstr "Programme de journalisation avancée pour les opérateurs Hamradio"
+
+#: packages.py:22
+msgid "Software Defined Radio receiver"
+msgstr "Récepteur radio défini par logiciel"
+
+#: packages.py:23
+msgid "simple demodulation and spectrum display program"
+msgstr "Programme d'affichage de démodulation et de spectre simple"
+
+#: packages.py:24
+msgid "Morse code tutor - command line user interface"
+msgstr "Tutor de code Morse - Interface utilisateur de ligne de commande"
+
+#: packages.py:25
+msgid "Morse code tutor - text user interface"
+msgstr "Tutor de code Morse - Interface utilisateur de texte"
+
+#: packages.py:26
+msgid "morse daemon for the parallel or serial port"
+msgstr "Morse Daemon pour le port parallèle ou en série"
+
+#: packages.py:27
+msgid "CLI and GTK+ GUI DAB & DAB+ receiver client"
+msgstr "CLI et GTK + GUI DAB & DAB + RECEPIR CLIENT"
+
+#: packages.py:28
+msgid "Soundcard TNC for APRS"
+msgstr "Carte son TNC pour APRS"
+
+#: packages.py:29
+msgid "Configuration utility for DMR radios"
+msgstr "Utilité de configuration pour les radios DMR"
+
+#: packages.py:30
+msgid "Digital Speech Decoder"
+msgstr "Décodeur de vocation numérique"
+
+#: packages.py:31
+msgid "ADS-B Ground Station System for RTL-SDR"
+msgstr "Système de station sol ADS-B pour RTL-SDR"
+
+#: packages.py:32
+msgid "convert ebooks to Morse MP3s/OGGs"
+msgstr "Convertir les livres électroniques en mp3s / oggs Morse"
+
+#: packages.py:33
+msgid "GUI for ebook2cw"
+msgstr "GUI pour ebook2cw"
+
+#: packages.py:34
+msgid "Debian Electronics tasks for tasksel"
+msgstr "Tâches de Debian Electronics pour Tasksel"
+
+#: packages.py:35
+msgid "Packet radio mailbox and utilities"
+msgstr "Packet Radio Boîte aux lettres et utilitaires"
+
+#: packages.py:36
+msgid "Study tool for USA FCC commercial radio license exams."
+msgstr "Outil d'étude pour les examens de licence de radio commerciale USA FCC."
+
+#: packages.py:37
+msgid "ham radio Amateur Multicast Protocol application"
+msgstr "Application de protocole de multidiffusion amateur radio"
+
+#: packages.py:38
+msgid "digital modem program for hamradio operators"
+msgstr "Programme de modem numérique pour les opérateurs Hamradio"
+
+#: packages.py:39
+msgid "ham radio transceiver control program"
+msgstr "Émission de contrôle des émetteurs-récepteurs radio"
+
+#: packages.py:40
+msgid "amateur radio file encapsulation/compression utility"
+msgstr "Utilité de l'encapsulation / compression du fichier radio amateur"
+
+#: packages.py:41
+msgid "Digital Voice mode for ham radio"
+msgstr "Mode vocal numérique pour la radio amateur"
+
+#: packages.py:42
+msgid "program for reception and transmission of QRSS/DFCW signals"
+msgstr "Programme de réception et de transmission des signaux QRSS / DFCW"
+
+#: packages.py:43
+msgid "Global navigation satellite systems software defined receiver"
+msgstr "Global Navigation Satellite Systems Software définis récepteur"
+
+#: packages.py:44
+msgid "AIS receiver which uses the discriminator output of VHF receivers"
+msgstr "Récepteur AIS qui utilise la sortie discriminatrice des récepteurs VHF"
+
+#: packages.py:45
+msgid "OpenStreetMap GUI for gnuais"
+msgstr "OpenstreetMap GUI pour Gnuais"
+
+#: packages.py:46
+msgid "GNU Radio Software Radio Toolkit"
+msgstr "Boîte à outils Radio Radio GNU Radio"
+
+#: packages.py:47
+msgid "Satellite tracking program"
+msgstr "Programme de suivi des satellites"
+
+#: packages.py:48
+msgid "Software defined radio receiver"
+msgstr "Récepteur radio défini par logiciel"
+
+#: packages.py:49
+msgid "Gnuradio Mode-S/ADS-B radio"
+msgstr "Radio Gnuradio Mode-S / ADS-B"
+
+#: packages.py:50
+msgid "gnuradio interface module for OpenHPSDR protocol 1"
+msgstr "Module d'interface Gnuradio pour le protocole OpenHPSDR 1"
+
+#: packages.py:51
+msgid "LimeSDR blocks for GnuRadio"
+msgstr "Blocs limesdr pour Gnuradio"
+
+#: packages.py:52
+msgid "Gnuradio blocks from the OsmoSDR project"
+msgstr "Gnuradio bloque du projet OSMOSDR"
+
+#: packages.py:53
+msgid "GNU Radio FM RDS/TMC Transceiver"
+msgstr "Émetteur-récepteur GNU Radio FM RDS / TMC"
+
+#: packages.py:54
+msgid "graphical user interface to the Ham Radio Control Libraries"
+msgstr "Interface utilisateur graphique aux bibliothèques de contrôle radio HAM"
+
+#: packages.py:55
+msgid "Software defined radio peripheral - utilities"
+msgstr "Périphérique radio défini par logiciel - Utilitaires"
+
+#: packages.py:56
+msgid "Analogue TV transmitter for the HackRF"
+msgstr "Émetteur TV analogique pour le hackrf"
+
+#: packages.py:57
+msgid "Study tool for USA FCC amateur radioexams."
+msgstr "Outil d'étude pour les radioexams amateurs de FCC USA."
+
+#: packages.py:58
+msgid "Debian Hamradio Tasks"
+msgstr "Tâches Debian Hamradio"
+
+#: packages.py:59
+msgid "Software control for ICOM radios with CI-V interface"
+msgstr "Contrôle du logiciel pour les radios ICOM avec interface CI-V"
+
+#: packages.py:60
+msgid "tool for visualising captured radio signals"
+msgstr "outil pour visualiser les signaux radio capturés"
+
+#: packages.py:61
+msgid "Amateur Radio Digital Mode providing weak signal messaging"
+msgstr "Mode numérique radio amateur fournissant une messagerie de signal faible"
+
+#: packages.py:62
+msgid "Web interface for amateur radio installed programs"
+msgstr "Interface Web pour les programmes installés par radio amateur"
+
+#: packages.py:63
+msgid "Multiplatform ham radio logging program"
+msgstr "Programme de journalisation radio-radio multiplateforme"
+
+#: packages.py:64
+msgid "Control programs for the Per Vices Noctar IQ demodulator board"
+msgstr "Programmes de contrôle pour la carte de démodulateur Noctar IQ par vices"
+
+#: packages.py:65
+msgid "Utilities to support the hamlib radio control library"
+msgstr ""
+"Utilitaires pour prendre en charge la bibliothèque de contrôle radio de "
+"Hamlib"
+
+#: packages.py:66
+msgid "tools to test, control and update LMS7 transceiver based hardware"
+msgstr ""
+"Outils pour tester, contrôler et mettre à jour le matériel basé sur l"
+"'émetteur-récepteur LMS7"
+
+#: packages.py:67
+msgid "terminal for packet radio with mail client"
+msgstr "Terminal pour la radio de paquets avec client de messagerie"
+
+#: packages.py:68
+msgid "software package for FDTD simulation"
+msgstr "Package logiciel pour la simulation FDTD"
+
+#: packages.py:69
+msgid "general-purpose software audio FSK modem"
+msgstr "modem FSK logiciel à usage général"
+
+#: packages.py:70
+msgid "Software defined radio support for Mirics hardware"
+msgstr "Prise en charge radio définie par logiciel pour le matériel Mirics"
+
+#: packages.py:71
+msgid "training program about morse-code for aspiring radio hams"
+msgstr "Programme de formation sur Morse-Code pour les aspirants jambon de radio"
+
+#: packages.py:72
+msgid "tool for decoding the morse codes from a PCM WAV file"
+msgstr "Outil de décodage des codes Morse à partir d'un fichier PCM WAV"
+
+#: packages.py:73
+msgid "Linux Radio Transmission Decoder"
+msgstr "Décodeur de transmission radio Linux"
+
+#: packages.py:74
+msgid "digital radio transmission decoder"
+msgstr "Décodeur de transmission radio numérique"
+
+#: packages.py:75
+msgid "Translation of the NEC2 FORTRAN source code to the C language"
+msgstr "Traduction du code source NEC2 FORTRAN à la langue C"
+
+#: packages.py:76
+msgid "Electromagnetic simulator"
+msgstr "Simulateur électromagnétique"
+
+#: packages.py:77
+msgid "Software defined radio support for OsmoSDR hardware"
+msgstr "Prise en charge radio définie par logiciel pour le matériel OSMOSDR"
+
+#: packages.py:78
+msgid "Remote configuration daemon for Gracilis Packeten"
+msgstr "Démon de configuration à distance pour gracilis paqueten"
+
+#: packages.py:79
+msgid "PSK31 terminal application with text-based user interface"
+msgstr "Application de terminal PSK31 avec interface utilisateur textuelle"
+
+#: packages.py:80
+msgid "logging tool for amateur radio operators"
+msgstr "Outil de journalisation pour les opérateurs radio amateurs"
+
+#: packages.py:81
+msgid "high speed morse trainer, similar to DL4MM`s Rufz"
+msgstr "Trainer Morse à grande vitesse, similaire au RUFZ de DL4MM"
+
+#: packages.py:82
+msgid "Qt-based slow-scan TV and fax"
+msgstr "TV et fax à balayage lent basés sur QT"
+
+#: packages.py:83
+msgid "Graphical client for the EchoLink? protocol"
+msgstr "Client graphique pour l'Echolink? protocole"
+
+#: packages.py:84
+msgid "Funcube Dongle controller"
+msgstr "Contrôleur de dongle de funcube"
+
+#: packages.py:85
+msgid "Software Defined Radio"
+msgstr "Radio définie par logiciel"
+
+#: packages.py:86
+msgid "simple ntp refclock daemon for MSF/WWVB/DCF77 time signals"
+msgstr "démon de refclock NTP simple pour MSF / WWVB / DCF77 Signaux temporels"
+
+#: packages.py:87
+msgid "Remote controller for radio transceivers"
+msgstr "Télécommande pour les émetteurs-récepteurs radio"
+
+#: packages.py:88
+msgid "Decode 433.9 Mhz data"
+msgstr "Décoder 433,9 données MHz"
+
+#: packages.py:89
+msgid "Software defined radio receiver for Realtek RTL2832U"
+msgstr "Récepteur radio défini par logiciel pour Realtek RTL2832U"
+
+#: packages.py:90
+msgid "Use SoapySDR devices over network"
+msgstr "Utilisez des appareils SoapySdr sur le réseau"
+
+#: packages.py:91
+msgid "All device support for default version of SoapySDR"
+msgstr "Toute prise en charge de l'appareil pour la version par défaut de Soapysdr"
+
+#: packages.py:92
+msgid "Sound Card Amateur Packet Radio Modems"
+msgstr "Sound Card Amateur Packet Radio Modems"
+
+#: packages.py:93
+msgid "analyze point-to-point terrestrial RF communication links"
+msgstr "Analyser les liens de communication RF terrestres point à point"
+
+#: packages.py:94
+msgid "Calibration tools for SvxLink amateur radio suite"
+msgstr "Outils d'étalonnage pour la suite radio amateur SVXLink"
+
+#: packages.py:95
+msgid "GPIO control scripts SvxLink amateur radio server"
+msgstr "GPIO Control Scripts SvxLink Amateur Radio Server"
+
+#: packages.py:96
+msgid "Voice-over-IP server for ham radio operators"
+msgstr "VOIX-AVERSE-IP SERVER POUR LES OPÉRATEURS DE RADIO HAM"
+
+#: packages.py:97
+msgid "Conference server for SvxLink amateur radio servers"
+msgstr "Serveur de conférence pour les serveurs radio amateurs SVXLink"
+
+#: packages.py:98
+msgid "demonstrate electromagnetic emissions from computer systems"
+msgstr "démontrer les émissions électromagnétiques des systèmes informatiques"
+
+#: packages.py:99
+msgid "Tk GUI for the ICOM IC-R2 receiver"
+msgstr "GUI TK pour le récepteur ICOM IC-R2"
+
+#: packages.py:100
+msgid "Experimental Software for the ICOM IC-R5 Receiver"
+msgstr "Logiciel expérimental pour le récepteur ICOM IC-R5"
+
+#: packages.py:101
+msgid "console based ham radio contest logger"
+msgstr "Enregistreur de concours de radio amateur basé sur la console"
+
+#: packages.py:102
+msgid "tool to configure the TNC on several Kenwood radios"
+msgstr "outil pour configurer le TNC sur plusieurs radios de Kenwood"
+
+#: packages.py:103
+msgid "microwave and RF transmission line calculator"
+msgstr "calculatrice de ligne de transmission micro-ondes et RF"
+
+#: packages.py:104
+msgid "QSL log signing for the Logbook of the World"
+msgstr "Signe du journal QSL pour le journal de bord du monde"
+
+#: packages.py:105
+msgid "VHF/UHF/SHF Hamradio contest logging program"
+msgstr "Programme de journalisation du concours VHF / UHF / SHF Hamradio"
+
+#: packages.py:106
+msgid "World clock for ham radio operators"
+msgstr "Horloge mondiale pour les opérateurs de radio amateur"
+
+#: packages.py:107
+msgid "Soundcard-based X program for operating PSK31"
+msgstr "Programme x basé sur les cartes sonores pour l'exploitation PSK31"
+
+#: packages.py:108
+msgid "Displays time and date in specified time zones on console"
+msgstr ""
+"Affiche l'heure et la date dans les fuseaux horaires spécifiés sur la "
+"console"
+
+#: packages.py:109
+msgid "universal hardware driver for Ettus Research products - host apps"
+msgstr ""
+"Pilote de matériel universel pour les produits de recherche ETTUS - "
+"Applications hôtes"
+
+#: packages.py:110
+msgid "SoapySDR device support for libuhd"
+msgstr "Prise en charge de l'appareil SoapySdr pour Libuhd"
+
+#: packages.py:111
+msgid "Node front end for AX.25, NET/ROM, Rose and TCP"
+msgstr "Nœud frontal pour ax.25, net / rom, rose et tcp"
+
+#: packages.py:112
+msgid "DAB/DAB+ Software Radio"
+msgstr "Radio DAB / DAB + logiciel"
+
+#: packages.py:113
+msgid "Weak-signal amateur radio communications"
+msgstr "Communications radio amateur à signal faible"
+
+#: packages.py:114
+msgid "Calculates distance and azimuth between two Maidenhead locators"
+msgstr "Calcule la distance et l'azimut entre deux localisateurs de Maidenhead"
+
+#: packages.py:115
+msgid "X Amateur Station Tracking and Information Reporting"
+msgstr "Suivi de la station amateur et rapport d'informations"
+
+#: packages.py:116
+msgid "Morse code tutor - graphical user interface"
+msgstr "Tutor de code Morse - Interface utilisateur graphique"
+
+#: packages.py:117
+msgid "GUI to decode Morse signals to text"
+msgstr "GUI pour décoder les signaux Morse au texte"
+
+#: packages.py:118
+msgid "DX-cluster tcp/ip client for amateur radio"
+msgstr "Client DX-Cluster TCP / IP pour la radio amateur"
+
+#: packages.py:119
+msgid "GTK+ Logging program for Hamradio Operators"
+msgstr "Programme de journalisation GTK + pour les opérateurs Hamradio"
+
+#: packages.py:120
+msgid "calculate and display radio antenna properties"
+msgstr "Calculer et afficher les propriétés de l'antenne radio"
+
+#: packages.py:121
+msgid "software to analyse performance of Yagi-Uda antennas"
+msgstr "logiciel pour analyser les performances des antennes Yagi-Uda"
+
+#~ msgid "Not Installed"
+#~ msgstr "Non installé"
+
+#~ msgid "Checking package status..."
+#~ msgstr "Vérification de l'état du package ..."
+
+#~ msgid "Installed"
+#~ msgstr "Installé"
+
+#~ msgid "Ready"
+#~ msgstr "Prêt"
+
+#~ msgid "No packages selected"
+#~ msgstr "Aucun package sélectionné"
+
+#~ msgid "Please select packages first"
+#~ msgstr "Veuillez d'abord sélectionner les packages"
+
+#~ msgid "Install the following packages?"
+#~ msgstr "Installer les packages suivants?"
+
+#~ msgid "Confirm Installation"
+#~ msgstr "Confirmer l'installation"
+
+#~ msgid "Remove the following packages?"
+#~ msgstr "Supprimer les packages suivants?"
+
+#~ msgid "Confirm Removal"
+#~ msgstr "Confirmer le retrait"
+
+#~ msgid "Installing"
+#~ msgstr "Installation"
+
+#~ msgid "Removing"
+#~ msgstr "Enlèvement"
+
+#~ msgid "Ham Radio Package Manager"
+#~ msgstr "Ham Radio Package Manager"
+
+#~ msgid "Package Selection"
+#~ msgstr "Sélection de package"
+
+#~ msgid "Select All"
+#~ msgstr "Sélectionnez tout"
+
+#~ msgid "Deselect All"
+#~ msgstr "Désélectionner tout"
+
+#~ msgid "Refresh Status"
+#~ msgstr "Rafraîchir l'état"
+
+#~ msgid "Operations"
+#~ msgstr "Opérations"
+
+#~ msgid "Install Selected"
+#~ msgstr "Installer sélectionné"
+
+#~ msgid "Remove Selected"
+#~ msgstr "Supprimer sélectionné"
+
+#~ msgid "Output"
+#~ msgstr "Sortir"
+
