@@ -15,7 +15,7 @@ class Ui_AboutDialog(object):
     def setupUi(self, AboutDialog):
         AboutDialog.setObjectName("AboutDialog")
         AboutDialog.setWindowModality(QtCore.Qt.WindowModal)
-        AboutDialog.resize(357, 93)
+        AboutDialog.resize(357, 138)
         self.verticalLayout = QtWidgets.QVBoxLayout(AboutDialog)
         self.verticalLayout.setObjectName("verticalLayout")
         self.labelAppName = QtWidgets.QLabel(AboutDialog)

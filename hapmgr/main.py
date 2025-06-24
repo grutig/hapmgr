@@ -426,7 +426,7 @@ def main():
     else:
         lang = args.lang
     # Setup translations
-    translations = Translations.load('locale', lang, domain='messages')
+    translations = Translations.load(os.path.join(os.path.dirname(os.path.abspath(__file__)), "locale"), lang, domain='messages')
     _ = translations.gettext
 
     app = QApplication(sys.argv)

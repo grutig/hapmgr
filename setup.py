@@ -3,6 +3,15 @@ import os
 from setuptools.command.install import install
 from setuptools.config.expand import find_packages
 
+def find_locale_files():
+    locale_files = []
+    for root, dirs, files in os.walk('locale'):
+        for file in files:
+            if file.endswith('.mo'):
+                dest_dir = os.path.join('share', root)
+                source_file = os.path.join(root, file)
+                locale_files.append((dest_dir, [source_file]))
+    return locale_files
 
 class CustomInstallCommand(install):
     def run(self):
@@ -11,7 +20,7 @@ class CustomInstallCommand(install):
         if os.path.exists(admin_script):
             os.chmod(admin_script, 0o755)
 
-# Lista dei file di dati (icone, .desktop)
+
 data_files = [
     ('share/icons/hicolor/scalable/apps', ['data/icons/hapmgr.svg']),
     ('share/applications', ['data/applications/hapmgr.desktop']),
@@ -25,7 +34,7 @@ setup(
     version="1.0",
     packages=find_packages(),
     package_data={
-        'hapmgr': ['*.py', 'icon.svg'],
+        'hapmgr': ['*.py', 'icon.svg', 'locale/*/LC_MESSAGES/*.mo'],
     },
     author="Giorgio L. Rutigliano",
     author_email="giorgio@i8zse.eu",

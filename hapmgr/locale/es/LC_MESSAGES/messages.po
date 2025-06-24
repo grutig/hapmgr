@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-21 11:31+0200\n"
-"PO-Revision-Date: 2025-06-21 09:17+0000\n"
+"POT-Creation-Date: 2025-06-24 17:56+0200\n"
+"PO-Revision-Date: 2025-06-24 15:07+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
@@ -18,632 +18,794 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: HamPkgMgr.py:179 HamPkgMgr.py:218
-msgid "Not Installed"
-msgstr "No instalado"
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/about_ui.py:44
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:129
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:131
+#: hapmgr/about_ui.py:44 hapmgr/mainwindow_ui.py:129
+#: hapmgr/mainwindow_ui.py:131
+msgid "About"
+msgstr "Acerca de"
 
-#: HamPkgMgr.py:206
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/about_ui.py:45
+#: hapmgr/about_ui.py:45
+msgid "Ham Radio Applications Manager - Version 1.0"
+msgstr "Administrador de aplicaciones de Radio Ham - Versión 1.0"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/about_ui.py:46
+#: hapmgr/about_ui.py:46
+msgid "(c) 2025, I8ZSE Giorgio L. Rutigliano"
+msgstr "(c) 2025, i8zse Giorgio L. Rutigliano"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/about_ui.py:47
+#: hapmgr/about_ui.py:47
+msgid "https://www.i8zse.it - https://github.com/grutig"
+msgstr "https://www.i8zse.it - ​​https://github.com/grutig"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/about_ui.py:48
+#: hapmgr/about_ui.py:48
+msgid "This application is licensed under the LGPL v3 license."
+msgstr "Esta solicitud tiene licencia bajo la licencia LGPL V3."
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:154
+#: hapmgr/main.py:154
+msgid "Sel"
+msgstr "Sel"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:154
+#: hapmgr/main.py:154
+msgid "App"
+msgstr "Aplicación"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:154
+#: hapmgr/main.py:154
+msgid "Desc"
+msgstr "Descomunal"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:154
+#: hapmgr/main.py:154
+msgid "Pkg"
+msgstr "PKG"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:154
+#: hapmgr/main.py:154
+msgid "Status"
+msgstr "Estado"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:218
+#: hapmgr/main.py:218
 msgid "Checking package status..."
 msgstr "Comprobación del estado del paquete ..."
 
-#: HamPkgMgr.py:218
-msgid "Installed"
-msgstr "Instalado"
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:236
+#: hapmgr/main.py:236
+msgid "Inst"
+msgstr "Instalar"
 
-#: HamPkgMgr.py:230 HamPkgMgr.py:331 mainwindow_ui.py:114
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:236
+#: hapmgr/main.py:236
+msgid "NotInst"
+msgstr "No incluido"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:256
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:375
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:126
+#: hapmgr/main.py:256 hapmgr/main.py:375 hapmgr/mainwindow_ui.py:126
 msgid "Ready"
 msgstr "Listo"
 
-#: HamPkgMgr.py:254 HamPkgMgr.py:269
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:288
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:305
+#: hapmgr/main.py:288 hapmgr/main.py:305
 msgid "No packages selected"
 msgstr "No hay paquetes seleccionados"
 
-#: HamPkgMgr.py:255 HamPkgMgr.py:270
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:289
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:306
+#: hapmgr/main.py:289 hapmgr/main.py:306
 msgid "Please select packages first"
 msgstr "Seleccione los paquetes primero"
 
-#: HamPkgMgr.py:259
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:293
+#: hapmgr/main.py:293
 msgid "Install the following packages?"
 msgstr "Instalar los siguientes paquetes?"
 
-#: HamPkgMgr.py:260
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:294
+#: hapmgr/main.py:294
 msgid "Confirm Installation"
 msgstr "Confirmar la instalación"
 
-#: HamPkgMgr.py:274
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:310
+#: hapmgr/main.py:310
 msgid "Remove the following packages?"
 msgstr "¿Eliminar los siguientes paquetes?"
 
-#: HamPkgMgr.py:275
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:311
+#: hapmgr/main.py:311
 msgid "Confirm Removal"
 msgstr "Confirmar la eliminación"
 
-#: HamPkgMgr.py:287
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:325
+#: hapmgr/main.py:325
 msgid "Installing"
 msgstr "Instalación"
 
-#: HamPkgMgr.py:287
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:325
+#: hapmgr/main.py:325
 msgid "Removing"
 msgstr "Eliminación"
 
-#: mainwindow_ui.py:106
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:441
+#: hapmgr/main.py:441
+msgid "Critical error!"
+msgstr "¡Error crítico!"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:442
+#: hapmgr/main.py:442
+msgid "Operating sistem is not debian compatible"
+msgstr "Operación de Sistem no es compatible con Debian"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:450
+#: hapmgr/main.py:450
+msgid "Superuser not detected!"
+msgstr "Superuser no detectado!"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/main.py:451
+#: hapmgr/main.py:451
+msgid "Some functions requires super user capabilities"
+msgstr "Algunas funciones requieren capacidades súper de usuario"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:118
+#: hapmgr/mainwindow_ui.py:118
 msgid "Ham Radio Package Manager"
 msgstr "Administrador de paquetes de Radio Ham"
 
-#: mainwindow_ui.py:107
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:119
+#: hapmgr/mainwindow_ui.py:119
 msgid "Package Selection"
 msgstr "Selección de paquetes"
 
-#: mainwindow_ui.py:108
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:120
+#: hapmgr/mainwindow_ui.py:120
 msgid "Select All"
 msgstr "Seleccionar todo"
 
-#: mainwindow_ui.py:109
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:121
+#: hapmgr/mainwindow_ui.py:121
 msgid "Deselect All"
 msgstr "Deseleccionar todo"
 
-#: mainwindow_ui.py:110
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:122
+#: hapmgr/mainwindow_ui.py:122
 msgid "Refresh Status"
 msgstr "Estado de actualización"
 
-#: mainwindow_ui.py:111
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:123
+#: hapmgr/mainwindow_ui.py:123
 msgid "Operations"
 msgstr "Operaciones"
 
-#: mainwindow_ui.py:112
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:124
+#: hapmgr/mainwindow_ui.py:124
 msgid "Install Selected"
 msgstr "Instalar seleccionado"
 
-#: mainwindow_ui.py:113
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:125
+#: hapmgr/mainwindow_ui.py:125
 msgid "Remove Selected"
 msgstr "Eliminar seleccionado"
 
-#: mainwindow_ui.py:115
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:127
+#: hapmgr/mainwindow_ui.py:127
 msgid "Output"
 msgstr "Producción"
 
-#: packages.py:4 packages.py:5
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:128
+#: hapmgr/mainwindow_ui.py:128
+msgid "File"
+msgstr "Archivo"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/mainwindow_ui.py:130
+#: hapmgr/mainwindow_ui.py:130
+msgid "Exit"
+msgstr "Salida"
+
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:4
+#: hapmgr/packages.py:4
 msgid "Tiny and efficient software defined radio receiver - utilities"
 msgstr "Receptor de radio definido de software pequeño y eficiente - Utilidades"
 
-#: packages.py:6
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:5
+#: hapmgr/packages.py:5
 msgid "HF+VHF software defined radio receiver - user runtime"
 msgstr ""
 "Receptor de radio definido por software HF+VHF - tiempo de ejecución del "
 "usuario"
 
-#: packages.py:7
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:6
+#: hapmgr/packages.py:6
 msgid "Morse code training program"
 msgstr "Programa de capacitación en código Morse"
 
-#: packages.py:8
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:7
+#: hapmgr/packages.py:7
 msgid "antenna radiation pattern visualization software"
 msgstr "Software de visualización de patrones de radiación de antena"
 
-#: packages.py:9
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:8
+#: hapmgr/packages.py:8
 msgid "digipeater for APRS"
 msgstr "Digipeater para APRS"
 
-#: packages.py:10
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:9
+#: hapmgr/packages.py:9
 msgid "APRS Digipeater and iGate"
 msgstr "APRS Digipeater e iGate"
 
-#: packages.py:11
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:10
+#: hapmgr/packages.py:10
 msgid "AX.25 ham radio applications"
 msgstr "Ax.25 Aplicaciones de radioaficionados"
 
-#: packages.py:12
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:11
+#: hapmgr/packages.py:11
 msgid "tools for AX.25 interface configuration"
 msgstr "Herramientas para AX.25 Configuración de la interfaz"
 
-#: packages.py:13
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:12
+#: hapmgr/packages.py:12
 msgid "tools for AX.25 interface configuration -- X11-based"
 msgstr "Herramientas para la configuración de la interfaz AX.25-basada en X11"
 
-#: packages.py:14
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:13
+#: hapmgr/packages.py:13
 msgid "hamradio packet utilities for fbb"
 msgstr "Utilidades de paquetes de Hamradio para FBB"
 
-#: packages.py:15
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:14
+#: hapmgr/packages.py:14
 msgid "Mail user agent for ax.25 users, accessed via a node frontend"
 msgstr ""
 "Envíe un agente de usuario de correo para AX.25 usuarios, accedidos a "
 "través de un nodo frontend"
 
-#: packages.py:16
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:15
+#: hapmgr/packages.py:15
 msgid "Nuand bladeRF software-defined radio device"
 msgstr "Dispositivo de radio definido por software NUAND Bladerf"
 
-#: packages.py:17
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:16
+#: hapmgr/packages.py:16
 msgid "practice test for the Canadian Amateur Radio exam"
 msgstr "Prueba de práctica para el examen de radio amateur canadiense"
 
-#: packages.py:18
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:17
+#: hapmgr/packages.py:17
 msgid "Configuration tool for amateur radios"
 msgstr "Herramienta de configuración para radios amateur"
 
-#: packages.py:19
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:18
+#: hapmgr/packages.py:18
 msgid "Gui based tool to compare two text streams"
 msgstr "Herramienta basada en GUI para comparar dos flujos de texto"
 
-#: packages.py:20
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:19
+#: hapmgr/packages.py:19
 msgid "GUI based tool to compare two RTTY streams"
 msgstr "Herramienta basada en GUI para comparar dos transmisiones RTTY"
 
-#: packages.py:21
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:20
+#: hapmgr/packages.py:20
 msgid "Advanced logging program for hamradio operators"
 msgstr "Programa de registro avanzado para operadores de Hamradio"
 
-#: packages.py:22
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:21
+#: hapmgr/packages.py:21
 msgid "Software Defined Radio receiver"
 msgstr "Receptor de radio definido de software"
 
-#: packages.py:23
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:22
+#: hapmgr/packages.py:22
 msgid "simple demodulation and spectrum display program"
 msgstr "Programa de visualización simple de demodulación y espectro"
 
-#: packages.py:24
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:23
+#: hapmgr/packages.py:23
 msgid "Morse code tutor - command line user interface"
 msgstr "Tutor de código Morse - Interfaz de usuario de la línea de comandos"
 
-#: packages.py:25
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:24
+#: hapmgr/packages.py:24
 msgid "Morse code tutor - text user interface"
 msgstr "Tutor de código Morse - Interfaz de usuario de texto"
 
-#: packages.py:26
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:25
+#: hapmgr/packages.py:25
 msgid "morse daemon for the parallel or serial port"
 msgstr "Morse Daemon para el puerto paralelo o serie"
 
-#: packages.py:27
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:26
+#: hapmgr/packages.py:26
 msgid "CLI and GTK+ GUI DAB & DAB+ receiver client"
 msgstr "CLI y GTK+ GUI DAB & DAB+ RECEPTER Cliente"
 
-#: packages.py:28
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:27
+#: hapmgr/packages.py:27
 msgid "Soundcard TNC for APRS"
 msgstr "Talla de sonido TNC para APRS"
 
-#: packages.py:29
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:28
+#: hapmgr/packages.py:28
 msgid "Configuration utility for DMR radios"
 msgstr "Utilidad de configuración para radios DMR"
 
-#: packages.py:30
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:29
+#: hapmgr/packages.py:29
 msgid "Digital Speech Decoder"
 msgstr "Decodificador de voz digital"
 
-#: packages.py:31
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:30
+#: hapmgr/packages.py:30
 msgid "ADS-B Ground Station System for RTL-SDR"
 msgstr "Sistema de estación terrestre ADS-B para RTL-SDR"
 
-#: packages.py:32
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:31
+#: hapmgr/packages.py:31
 msgid "convert ebooks to Morse MP3s/OGGs"
 msgstr "convertir libros electrónicos a Morse mp3/oggs"
 
-#: packages.py:33
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:32
+#: hapmgr/packages.py:32
 msgid "GUI for ebook2cw"
 msgstr "GUI para eBook2cw"
 
-#: packages.py:34
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:33
+#: hapmgr/packages.py:33
 msgid "Debian Electronics tasks for tasksel"
 msgstr "Tareas de electrónica de Debian para Tasksel"
 
-#: packages.py:35
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:34
+#: hapmgr/packages.py:34
 msgid "Packet radio mailbox and utilities"
 msgstr "Buzón de radio de paquetes y utilidades"
 
-#: packages.py:36
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:35
+#: hapmgr/packages.py:35
 msgid "Study tool for USA FCC commercial radio license exams."
 msgstr ""
 "Herramienta de estudio para exámenes de licencia de radio comercial de "
 "EE. UU."
 
-#: packages.py:37
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:36
+#: hapmgr/packages.py:36
 msgid "ham radio Amateur Multicast Protocol application"
 msgstr "Aplicación de protocolo de multidifusión Ham Radio Amateur"
 
-#: packages.py:38
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:37
+#: hapmgr/packages.py:37
 msgid "digital modem program for hamradio operators"
 msgstr "Programa de módem digital para operadores de Hamradio"
 
-#: packages.py:39
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:38
+#: hapmgr/packages.py:38
 msgid "ham radio transceiver control program"
 msgstr "Programa de control del transceptor de radioaficionados"
 
-#: packages.py:40
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:39
+#: hapmgr/packages.py:39
 msgid "amateur radio file encapsulation/compression utility"
 msgstr "Encapsulación de archivos de radioaficionado/utilidad de compresión"
 
-#: packages.py:41
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:40
+#: hapmgr/packages.py:40
 msgid "Digital Voice mode for ham radio"
 msgstr "Modo de voz digital para la radioafición"
 
-#: packages.py:42
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:41
+#: hapmgr/packages.py:41
 msgid "program for reception and transmission of QRSS/DFCW signals"
 msgstr "Programa de recepción y transmisión de señales QRSS/DFCW"
 
-#: packages.py:43
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:42
+#: hapmgr/packages.py:42
 msgid "Global navigation satellite systems software defined receiver"
 msgstr "Receptor definido de software de sistemas satelitales de navegación global"
 
-#: packages.py:44
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:43
+#: hapmgr/packages.py:43
 msgid "AIS receiver which uses the discriminator output of VHF receivers"
 msgstr ""
 "Receptor AIS que utiliza la salida de discriminadores de los receptores "
 "VHF"
 
-#: packages.py:45
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:44
+#: hapmgr/packages.py:44
 msgid "OpenStreetMap GUI for gnuais"
 msgstr "OpenStreetMap GUI para Gnuais"
 
-#: packages.py:46
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:45
+#: hapmgr/packages.py:45
 msgid "GNU Radio Software Radio Toolkit"
 msgstr "Kit de herramientas de radio de software de radio GNU"
 
-#: packages.py:47
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:46
+#: hapmgr/packages.py:46
 msgid "Satellite tracking program"
 msgstr "Programa de seguimiento satelital"
 
-#: packages.py:48
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:47
+#: hapmgr/packages.py:47
 msgid "Software defined radio receiver"
 msgstr "Receptor de radio definido de software"
 
-#: packages.py:49
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:48
+#: hapmgr/packages.py:48
 msgid "Gnuradio Mode-S/ADS-B radio"
 msgstr "Radio Gnuradio Mode-S/ADS-B"
 
-#: packages.py:50
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:49
+#: hapmgr/packages.py:49
 msgid "gnuradio interface module for OpenHPSDR protocol 1"
 msgstr "Módulo de interfaz de Gnuradio para el protocolo OpenHPSDR 1"
 
-#: packages.py:51
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:50
+#: hapmgr/packages.py:50
 msgid "LimeSDR blocks for GnuRadio"
 msgstr "Bloques de Limesdr para Gnuradio"
 
-#: packages.py:52
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:51
+#: hapmgr/packages.py:51
 msgid "Gnuradio blocks from the OsmoSDR project"
 msgstr "Bloques de Gnuradio del proyecto OSMOSDR"
 
-#: packages.py:53
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:52
+#: hapmgr/packages.py:52
 msgid "GNU Radio FM RDS/TMC Transceiver"
 msgstr "GNU Radio FM RDS/TMC Transceptor"
 
-#: packages.py:54
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:53
+#: hapmgr/packages.py:53
 msgid "graphical user interface to the Ham Radio Control Libraries"
 msgstr ""
 "interfaz gráfica de usuario a las bibliotecas de control de "
 "radioaficionados"
 
-#: packages.py:55
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:54
+#: hapmgr/packages.py:54
 msgid "Software defined radio peripheral - utilities"
 msgstr "Radio periférico definido por software - Utilidades"
 
-#: packages.py:56
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:55
+#: hapmgr/packages.py:55
 msgid "Analogue TV transmitter for the HackRF"
 msgstr "Transmisor de TV analógico para el hackrf"
 
-#: packages.py:57
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:56
+#: hapmgr/packages.py:56
 msgid "Study tool for USA FCC amateur radioexams."
 msgstr "Herramienta de estudio para radioexames amateur de EE. UU."
 
-#: packages.py:58
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:57
+#: hapmgr/packages.py:57
 msgid "Debian Hamradio Tasks"
 msgstr "Tareas de hamradio de Debian"
 
-#: packages.py:59
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:58
+#: hapmgr/packages.py:58
 msgid "Software control for ICOM radios with CI-V interface"
 msgstr "Control de software para radios ICOM con interfaz CI-V"
 
-#: packages.py:60
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:59
+#: hapmgr/packages.py:59
 msgid "tool for visualising captured radio signals"
 msgstr "herramienta para visualizar señales de radio capturadas"
 
-#: packages.py:61
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:60
+#: hapmgr/packages.py:60
 msgid "Amateur Radio Digital Mode providing weak signal messaging"
 msgstr "Modo digital de radio amateur que proporciona mensajes de señal débiles"
 
-#: packages.py:62
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:61
+#: hapmgr/packages.py:61
 msgid "Web interface for amateur radio installed programs"
 msgstr "Interfaz web para programas instalados de radioaficionados"
 
-#: packages.py:63
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:62
+#: hapmgr/packages.py:62
 msgid "Multiplatform ham radio logging program"
 msgstr "Programa de registro de radio HAMM de multiplataforma"
 
-#: packages.py:64
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:63
+#: hapmgr/packages.py:63
 msgid "Control programs for the Per Vices Noctar IQ demodulator board"
 msgstr "Programas de control para la placa de demodulador de IQ NOCTAR PER VICTAR"
 
-#: packages.py:65
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:64
+#: hapmgr/packages.py:64
 msgid "Utilities to support the hamlib radio control library"
 msgstr "Servicios públicos para apoyar la biblioteca de control de radio Hamlib"
 
-#: packages.py:66
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:65
+#: hapmgr/packages.py:65
 msgid "tools to test, control and update LMS7 transceiver based hardware"
 msgstr ""
 "Herramientas para probar, controlar y actualizar hardware basado en "
 "transceptor LMS7"
 
-#: packages.py:67
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:66
+#: hapmgr/packages.py:66
 msgid "terminal for packet radio with mail client"
 msgstr "Terminal para la radio de paquetes con el cliente de correo"
 
-#: packages.py:68
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:67
+#: hapmgr/packages.py:67
 msgid "software package for FDTD simulation"
 msgstr "Paquete de software para simulación FDTD"
 
-#: packages.py:69
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:68
+#: hapmgr/packages.py:68
 msgid "general-purpose software audio FSK modem"
 msgstr "software de uso general Audio Módem FSK"
 
-#: packages.py:70
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:69
+#: hapmgr/packages.py:69
 msgid "Software defined radio support for Mirics hardware"
 msgstr "Soporte de radio definido por software para hardware MIRICS"
 
-#: packages.py:71
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:70
+#: hapmgr/packages.py:70
 msgid "training program about morse-code for aspiring radio hams"
 msgstr "Programa de capacitación sobre Código Morse para aspirantes a Radio Hams"
 
-#: packages.py:72
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:71
+#: hapmgr/packages.py:71
 msgid "tool for decoding the morse codes from a PCM WAV file"
 msgstr "Herramienta para decodificar los códigos Morse desde un archivo WAV PCM"
 
-#: packages.py:73
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:72
+#: hapmgr/packages.py:72
 msgid "Linux Radio Transmission Decoder"
 msgstr "Decodificador de transmisión de radio Linux"
 
-#: packages.py:74
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:73
+#: hapmgr/packages.py:73
 msgid "digital radio transmission decoder"
 msgstr "decodificador de transmisión de radio digital"
 
-#: packages.py:75
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:74
+#: hapmgr/packages.py:74
 msgid "Translation of the NEC2 FORTRAN source code to the C language"
 msgstr "Traducción del código fuente NEC2 FORTRAN al idioma C"
 
-#: packages.py:76
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:75
+#: hapmgr/packages.py:75
 msgid "Electromagnetic simulator"
 msgstr "Simulador electromagnético"
 
-#: packages.py:77
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:76
+#: hapmgr/packages.py:76
 msgid "Software defined radio support for OsmoSDR hardware"
 msgstr "Soporte de radio definido por software para hardware OSMOSDR"
 
-#: packages.py:78
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:77
+#: hapmgr/packages.py:77
 msgid "Remote configuration daemon for Gracilis Packeten"
 msgstr "Demonio de configuración remota para paqueten de Gracilis"
 
-#: packages.py:79
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:78
+#: hapmgr/packages.py:78
 msgid "PSK31 terminal application with text-based user interface"
 msgstr "Aplicación terminal PSK31 con interfaz de usuario basada en texto"
 
-#: packages.py:80
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:79
+#: hapmgr/packages.py:79
 msgid "logging tool for amateur radio operators"
 msgstr "Herramienta de registro para operadores de radioaficionados"
 
-#: packages.py:81
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:80
+#: hapmgr/packages.py:80
 msgid "high speed morse trainer, similar to DL4MM`s Rufz"
 msgstr "Entrenador Morse de alta velocidad, similar al rufz de DL4MM"
 
-#: packages.py:82
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:81
+#: hapmgr/packages.py:81
 msgid "Qt-based slow-scan TV and fax"
 msgstr "TV y fax de escaneo lento basado en QT"
 
-#: packages.py:83
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:82
+#: hapmgr/packages.py:82
 msgid "Graphical client for the EchoLink? protocol"
 msgstr "Cliente gráfico para Echolink? protocolo"
 
-#: packages.py:84
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:83
+#: hapmgr/packages.py:83
 msgid "Funcube Dongle controller"
 msgstr "Controlador de dongle"
 
-#: packages.py:85
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:84
+#: hapmgr/packages.py:84
 msgid "Software Defined Radio"
 msgstr "Radio definido de software"
 
-#: packages.py:86
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:85
+#: hapmgr/packages.py:85
 msgid "simple ntp refclock daemon for MSF/WWVB/DCF77 time signals"
 msgstr "Daemón de referencia NTP simple para señales de tiempo MSF/WWVB/DCF77"
 
-#: packages.py:87
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:86
+#: hapmgr/packages.py:86
 msgid "Remote controller for radio transceivers"
 msgstr "Controlador remoto para transceptores de radio"
 
-#: packages.py:88
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:87
+#: hapmgr/packages.py:87
 msgid "Decode 433.9 Mhz data"
 msgstr "Decode 433.9 datos"
 
-#: packages.py:89
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:88
+#: hapmgr/packages.py:88
 msgid "Software defined radio receiver for Realtek RTL2832U"
 msgstr "Receptor de radio definido de software para Realtek RTL2832U"
 
-#: packages.py:90
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:89
+#: hapmgr/packages.py:89
 msgid "Use SoapySDR devices over network"
 msgstr "Use dispositivos SoapysDR a través de la red"
 
-#: packages.py:91
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:90
+#: hapmgr/packages.py:90
 msgid "All device support for default version of SoapySDR"
 msgstr "Todo el soporte del dispositivo para la versión predeterminada de Soapysdr"
 
-#: packages.py:92
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:91
+#: hapmgr/packages.py:91
 msgid "Sound Card Amateur Packet Radio Modems"
 msgstr "Tarjeta de sonido Módems de radio de paquetes amateur"
 
-#: packages.py:93
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:92
+#: hapmgr/packages.py:92
 msgid "analyze point-to-point terrestrial RF communication links"
 msgstr "Analizar enlaces de comunicación de RF terrestres punto a punto"
 
-#: packages.py:94
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:93
+#: hapmgr/packages.py:93
 msgid "Calibration tools for SvxLink amateur radio suite"
 msgstr "Herramientas de calibración para SVXLink Amateur Radio Suite"
 
-#: packages.py:95
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:94
+#: hapmgr/packages.py:94
 msgid "GPIO control scripts SvxLink amateur radio server"
 msgstr "GPIO Control Scripts SVXLink Amateur Radio Server"
 
-#: packages.py:96
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:95
+#: hapmgr/packages.py:95
 msgid "Voice-over-IP server for ham radio operators"
 msgstr "Servidor de voz-sobre-IP para operadores de radioaficionados"
 
-#: packages.py:97
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:96
+#: hapmgr/packages.py:96
 msgid "Conference server for SvxLink amateur radio servers"
 msgstr "Servidor de conferencias para servidores de radio amateur SVXLink"
 
-#: packages.py:98
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:97
+#: hapmgr/packages.py:97
 msgid "demonstrate electromagnetic emissions from computer systems"
 msgstr "Demostrar emisiones electromagnéticas de los sistemas informáticos"
 
-#: packages.py:99
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:98
+#: hapmgr/packages.py:98
 msgid "Tk GUI for the ICOM IC-R2 receiver"
 msgstr "TK GUI para el receptor ICOM IC-R2"
 
-#: packages.py:100
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:99
+#: hapmgr/packages.py:99
 msgid "Experimental Software for the ICOM IC-R5 Receiver"
 msgstr "Software experimental para el receptor ICOM IC-R5"
 
-#: packages.py:101
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:100
+#: hapmgr/packages.py:100
 msgid "console based ham radio contest logger"
 msgstr "Logger del concurso de radioaficionados por la consola"
 
-#: packages.py:102
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:101
+#: hapmgr/packages.py:101
 msgid "tool to configure the TNC on several Kenwood radios"
 msgstr "herramienta para configurar el TNC en varias radios de Kenwood"
 
-#: packages.py:103
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:102
+#: hapmgr/packages.py:102
 msgid "microwave and RF transmission line calculator"
 msgstr "Calculadora de la línea de transmisión de microondas y RF"
 
-#: packages.py:104
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:103
+#: hapmgr/packages.py:103
 msgid "QSL log signing for the Logbook of the World"
 msgstr "La firma de registro de QSL para el libro de registro del mundo"
 
-#: packages.py:105
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:104
+#: hapmgr/packages.py:104
 msgid "VHF/UHF/SHF Hamradio contest logging program"
 msgstr "Programa de registro del concurso VHF/UHF/SHF HAMRADIO"
 
-#: packages.py:106
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:105
+#: hapmgr/packages.py:105
 msgid "World clock for ham radio operators"
 msgstr "Reloj mundial para operadores de radioaficionados"
 
-#: packages.py:107
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:106
+#: hapmgr/packages.py:106
 msgid "Soundcard-based X program for operating PSK31"
 msgstr "Programa X basado en la tarjeta de sonido para operar PSK31"
 
-#: packages.py:108
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:107
+#: hapmgr/packages.py:107
 msgid "Displays time and date in specified time zones on console"
 msgstr "Muestra tiempo y fecha en zonas horarias especificadas en la consola"
 
-#: packages.py:109
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:108
+#: hapmgr/packages.py:108
 msgid "universal hardware driver for Ettus Research products - host apps"
 msgstr ""
 "Controlador de hardware universal para productos de investigación Ettus -"
 " Aplicaciones host"
 
-#: packages.py:110
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:109
+#: hapmgr/packages.py:109
 msgid "SoapySDR device support for libuhd"
 msgstr "SOAPYSDR SOPORT SOPORTE PARA LIBUHD"
 
-#: packages.py:111
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:110
+#: hapmgr/packages.py:110
 msgid "Node front end for AX.25, NET/ROM, Rose and TCP"
 msgstr "Nodo front -end para AX.25, NET/ROM, Rose y TCP"
 
-#: packages.py:112
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:111
+#: hapmgr/packages.py:111
 msgid "DAB/DAB+ Software Radio"
 msgstr "Radio de software DAB/DAB+"
 
-#: packages.py:113
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:112
+#: hapmgr/packages.py:112
 msgid "Weak-signal amateur radio communications"
 msgstr "Comunicaciones de radioaficionados de señal débil"
 
-#: packages.py:114
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:113
+#: hapmgr/packages.py:113
 msgid "Calculates distance and azimuth between two Maidenhead locators"
 msgstr "Calcula la distancia y el acimut entre dos localizadores de Maidenhead"
 
-#: packages.py:115
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:114
+#: hapmgr/packages.py:114
 msgid "X Amateur Station Tracking and Information Reporting"
 msgstr "X seguimiento de estaciones de aficionados e informes de información"
 
-#: packages.py:116
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:115
+#: hapmgr/packages.py:115
 msgid "Morse code tutor - graphical user interface"
 msgstr "Tutor de código Morse - interfaz gráfica de usuario"
 
-#: packages.py:117
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:116
+#: hapmgr/packages.py:116
 msgid "GUI to decode Morse signals to text"
 msgstr "GUI para decodificar señales de Morse al texto"
 
-#: packages.py:118
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:117
+#: hapmgr/packages.py:117
 msgid "DX-cluster tcp/ip client for amateur radio"
 msgstr "Cliente TCP/IP de DX-Cluster para radio amateur"
 
-#: packages.py:119
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:118
+#: hapmgr/packages.py:118
 msgid "GTK+ Logging program for Hamradio Operators"
 msgstr "Programa de registro GTK+ para operadores de Hamradio"
 
-#: packages.py:120
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:119
+#: hapmgr/packages.py:119
 msgid "calculate and display radio antenna properties"
 msgstr "Calcular y mostrar propiedades de antena de radio"
 
-#: packages.py:121
+#: debian/hapmgr/usr/lib/python3/dist-packages/hapmgr/packages.py:120
+#: hapmgr/packages.py:120
 msgid "software to analyse performance of Yagi-Uda antennas"
 msgstr "Software para analizar el rendimiento de las antenas Yagi-ida"
-
-#~ msgid "Not Installed"
-#~ msgstr "No instalado"
-
-#~ msgid "Checking package status..."
-#~ msgstr "Comprobación del estado del paquete ..."
-
-#~ msgid "Installed"
-#~ msgstr "Instalado"
-
-#~ msgid "Ready"
-#~ msgstr "Listo"
-
-#~ msgid "No packages selected"
-#~ msgstr "No hay paquetes seleccionados"
-
-#~ msgid "Please select packages first"
-#~ msgstr "Seleccione los paquetes primero"
-
-#~ msgid "Install the following packages?"
-#~ msgstr "Instalar los siguientes paquetes?"
-
-#~ msgid "Confirm Installation"
-#~ msgstr "Confirmar la instalación"
-
-#~ msgid "Remove the following packages?"
-#~ msgstr "¿Eliminar los siguientes paquetes?"
-
-#~ msgid "Confirm Removal"
-#~ msgstr "Confirmar la eliminación"
-
-#~ msgid "Installing"
-#~ msgstr "Instalación"
-
-#~ msgid "Removing"
-#~ msgstr "Eliminación"
-
-#~ msgid "Ham Radio Package Manager"
-#~ msgstr "Administrador de paquetes de Radio Ham"
-
-#~ msgid "Package Selection"
-#~ msgstr "Selección de paquetes"
-
-#~ msgid "Select All"
-#~ msgstr "Seleccionar todo"
-
-#~ msgid "Deselect All"
-#~ msgstr "Deseleccionar todo"
-
-#~ msgid "Refresh Status"
-#~ msgstr "Estado de actualización"
-
-#~ msgid "Operations"
-#~ msgstr "Operaciones"
-
-#~ msgid "Install Selected"
-#~ msgstr "Instalar seleccionado"
-
-#~ msgid "Remove Selected"
-#~ msgstr "Eliminar seleccionado"
-
-#~ msgid "Output"
-#~ msgstr "Producción"
 

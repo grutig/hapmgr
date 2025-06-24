@@ -30,7 +30,7 @@ sudo apt install ./hapmgr_0.6_all.deb
 After installation, you'll find it in system menu, or launch **hapmgr** from command line by running:
 
 ```bash
-sudo hapmgr
+sudo -E hapmgr [--lang=<lang>>]
 ```
 
 Use the graphical interface to:
