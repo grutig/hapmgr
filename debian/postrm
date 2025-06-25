@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+case "$1" in
+    purge)
+        # do clieaning
+        ;;
+    remove)
+        if command -v update-desktop-database >/dev/null 2>&1; then
+            update-desktop-database -q /usr/share/applications
+        fi
+        ;;
+esac
+
+exit 0

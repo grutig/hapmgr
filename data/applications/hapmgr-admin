@@ -1,12 +1,20 @@
 #!/bin/bash
-export DISPLAY="${DISPLAY:-:0}"
-export QT_X11_NO_MITSHM=1
-
 if [ -n "$PKEXEC_UID" ]; then
     ORIGINAL_USER=$(getent passwd "$PKEXEC_UID" | cut -d: -f1)
     ORIGINAL_HOME=$(getent passwd "$PKEXEC_UID" | cut -d: -f6)
-    export XAUTHORITY="$ORIGINAL_HOME/.Xauthority"
+
     export XDG_RUNTIME_DIR="/run/user/$PKEXEC_UID"
+    export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-0}"
+
+    # Verifica che il socket Wayland sia accessibile
+    if [ -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]; then
+        export QT_QPA_PLATFORM=wayland
+    else
+        export QT_QPA_PLATFORM=xcb
+        export DISPLAY="${DISPLAY:-:0}"
+        export XAUTHORITY="$ORIGINAL_HOME/.Xauthority"
+    fi
 fi
 
+export QT_X11_NO_MITSHM=1
 exec /usr/bin/hapmgr "$@"

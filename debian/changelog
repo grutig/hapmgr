@@ -1,0 +1,11 @@
+hapmgr (0.6-2) unstable; urgency=medium
+
+  * Fixed wayland bug on app wrapper
+
+ -- Giorgio L. Rutigliano <giorgio@i8zse.eu>  Wed, 25 Jun 2025 09:47:19 +0200
+
+hapmgr (0.6-1) unstable; urgency=medium
+
+  * First public release.
+
+ -- Giorgio L. Rutigliano <giorgio@i8zse.eu>  Fri, 21 Jun 2025 12:00:00 +0200
