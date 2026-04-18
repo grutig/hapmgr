@@ -4,16 +4,15 @@ import re
 from collections import deque
 import gettext
 import os
+import json
+from pathlib import Path
 
 # Gettext configuration
 _ = gettext.gettext
 
-# Set LC_ALL=C for English descriptions
-os.environ['LC_ALL'] = 'C'
-
-
 def get_pack_tree(package):
     """Returns the list of dependencies for a package"""
+    os.environ['LC_ALL'] = 'C'
     try:
         output = subprocess.check_output(
             ['apt-cache', 'depends', package],
@@ -27,16 +26,20 @@ def get_pack_tree(package):
             if line.startswith('  Recommends: '):
                 dep = line.split('Recommends: ')[1].strip()
                 dependencies.append(dep.split(':')[0])  # Removes any :arch suffix
+        del os.environ['LC_ALL']
         return dependencies
 
     except subprocess.CalledProcessError as e:
+        del os.environ['LC_ALL']
         return []
     except Exception as e:
+        del os.environ['LC_ALL']
         return []
 
 
 def get_pack_info(package):
     """Returns the name and description of a package"""
+
     try:
         output = subprocess.check_output(
             ['apt-cache', 'show', package],
@@ -48,8 +51,8 @@ def get_pack_info(package):
         for line in output.split('\n'):
             if line.startswith('Package: '):
                 name = line.split('Package: ')[1].strip()
-            elif line.startswith('Description-en'):
-                description = line.split('Description-en: ')[1].strip()
+            elif line.startswith(f'Description-{langcode}'):
+                description = line.split(f'Description-{langcode}: ')[1].strip()
                 # Take only the first line of the description
                 description = description.split('\n')[0]
                 # Remove any (metapackage) annotations
@@ -91,10 +94,18 @@ def process_meta(metapackage):
 
 
 def main():
+    global langcode
+
+    home = Path(os.environ["HOME"])
+    jpacks = home / ".config" / "hapmgr" / "packages.json"
+    jpacks.parent.mkdir(exist_ok=True, parents=True)
+
     # Start from hamradio-all
     packages = []
     done_metas = []
     metaqueue = deque(['hamradio-all'])
+
+    langcode = os.environ.get('LANG', '').split("_")[0].lower()
 
     while metaqueue:
         cur_meta = metaqueue.popleft()
@@ -110,39 +121,12 @@ def main():
                 packages.append(pack)
     # Sort by application name (case-insensitive)
     packages.sort(key=lambda x: x['app'].lower())
-    # update messages.pot
-    potfile = "locale/messages.pot"
-    potentries = set()
-    try:
-        with open(potfile, "r") as f:
-            content = f.read()
-            potentries = set(re.findall(r'msgid "(.*?)"', content))
-    except FileNotFoundError:
-        content = '''msgid ""
-    msgstr ""
-    "Project-Id-Version: 1.0\\n"
-    "MIME-Version: 1.0\\n"
-    "Content-Type: text/plain; charset=UTF-8\\n"
-    "Content-Transfer-Encoding: 8bit\\n"
 
-    '''
-    pfh = open(potfile, "w")
-    pfh.write(content)
+    with open (jpacks, 'w') as f:
+        json.dump(packages, f)
 
-    with open("packages.py", "w") as f:
-        f.write("class Packs:\n")
-        f.write("   packages = []\n")
-        f.write("   def __init__(self, _):\n")
-        for package in packages:
-            if "'" in package['desc']:
-                package['desc'] = package['desc'].replace("'", '\u0060')
-            f.write("      self.packages.append("+str(package).replace("'desc':", "'desc': _(").replace("'}", "')}") + ")\n")
-            if package['desc'] not in potentries:
-                msgid = package['desc']
-                pfh.write(f'\nmsgid "{msgid}"\nmsgstr ""\n')
 
-    pfh.close()
-    # translate message strings
+
 
 
 if __name__ == '__main__':

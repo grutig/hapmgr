@@ -37,12 +37,19 @@ import locale
 import shutil
 import argparse
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QCheckBox, QLabel, QWidget, QHBoxLayout, \
-    QTableWidgetItem, QTableWidget, QDialog
+    QTableWidgetItem, QTableWidget, QDialog,  QVBoxLayout
 from PyQt5.QtCore import QThread, pyqtSignal, QTimer, QTranslator, QLocale, QCoreApplication, Qt
+
 from babel.support import Translations
 from hapmgr.mainwindow_ui import Ui_MainWindow
 from hapmgr.about_ui import Ui_AboutDialog
-from hapmgr.packages import Packs
+from hapmgr.update_app_list import main as updatelist
+import json
+from pathlib import Path
+
+home = Path(os.environ["HOME"])
+jpacks = home / ".config" / "hapmgr" / "packages.json"
+jpacks.parent.mkdir(exist_ok=True, parents=True)
 
 class PackageWorker(QThread):
     """
@@ -54,14 +61,21 @@ class PackageWorker(QThread):
     def __init__(self, package_name, action):
         super().__init__()
         self.package_name = package_name
-        self.action = action  # 'install' or 'remove'
+        self.action = action  # 'install', 'remove', 'update, 'ugrade'
 
     def run(self):
         try:
+            self.output.emit("Please wait...\n")
             if self.action == 'install':
-                cmd = ['sudo', 'apt-get', 'install', '-y', self.package_name]
-            else:
-                cmd = ['sudo', 'apt-get', 'remove', '-y', self.package_name]
+                cmd = ['sudo', '-n', 'apt-get', 'install', '-y', self.package_name]
+            if self.action == 'remove':
+                cmd = ['sudo', '-n', 'apt-get', 'remove', '-y', self.package_name]
+            if self.action == 'update':
+                cmd = ['sudo', '-n', 'apt-get', 'update']
+            if self.action == 'upgrade':
+                cmd = ['sudo', '-n', 'apt-get', '-y', 'upgrade']
+            if self.action == 'autoremove':
+                cmd = ['sudo', '-n', 'apt-get', '-y', 'autoremove']
 
             process = subprocess.Popen(
                 cmd,
@@ -76,7 +90,20 @@ class PackageWorker(QThread):
 
             process.wait()
             success = process.returncode == 0
-            self.finished.emit(self.package_name, success)
+
+            if self.action == 'update':
+                self.output.emit("Updating packages list...\n")
+                updatelist()
+                self.output.emit("\nList updated\n")
+                self.finished.emit("List updated", success)
+            elif self.action == 'upgrade':
+                self.output.emit("\nSystem updgraded\n")
+                self.finished.emit("System upgraded", success)
+            elif self.action == 'autoremove':
+                self.output.emit("\nSystem cleaned\n")
+                self.finished.emit("System upgraded", success)
+            else:
+                self.finished.emit(self.package_name, success)
 
         except Exception as e:
             self.output.emit(f"Error: {str(e)}")
@@ -124,7 +151,6 @@ class HamRadioManager(QMainWindow):
         self.translations = translations
         self._ = self.translations.gettext
 
-        self.packages = Packs(self.translations.gettext).packages
         def uitranslate(ambito, testo):
             return self._(testo)
         QCoreApplication.translate = uitranslate
@@ -137,7 +163,7 @@ class HamRadioManager(QMainWindow):
         self.worker = None
         self.status_worker = None
 
-        self.setup_package_list()
+        self.load_packages()
         self.connect_signals()
         self.refresh_package_status()
 
@@ -209,6 +235,8 @@ class HamRadioManager(QMainWindow):
         self.ui.installBtn.clicked.connect(self.install_selected)
         self.ui.removeBtn.clicked.connect(self.remove_selected)
         self.ui.actionAbout.triggered.connect(self.showabout)
+        self.ui.actionUpdate.triggered.connect(self.sysupdate)
+        self.ui.actionUpgrade.triggered.connect(self.sysupgrade)
         self.ui.actionExit.triggered.connect(self.exitapp)
 
     def refresh_package_status(self):
@@ -391,6 +419,70 @@ class HamRadioManager(QMainWindow):
         scrollbar.setValue(scrollbar.maximum())
 
 
+    def load_packages(self):
+        try:
+            with open(jpacks, 'r') as f:
+                packs = json.load(f)
+        except:
+            packs = []
+
+        self.packages = packs
+        self.setup_package_list()
+        # Refresh status
+        QTimer.singleShot(1000, self.refresh_package_status)
+
+    def sysupdate(self):
+        """
+        Request apt list update
+        """
+        self.packages = []
+        del self.table
+        self.setup_package_list()
+        self.ui.progressBar.setVisible(True)
+        self.ui.statusLabel.setText(self._('Updating system'))
+        self.worker = PackageWorker('-update-', "update")
+        self.worker.output.connect(self.update_output)
+        self.worker.finished.connect(self.load_packages)
+        self.worker.start()
+        # draw
+        QApplication.processEvents()
+
+    def sysupgrade(self):
+        """
+        Request apt list upgrade
+        """
+        reply = QMessageBox.question(
+            self,
+            self._("Please confirm"),
+            self._("Do you want to upgrade your system?"),
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+
+        if reply != QMessageBox.Yes:
+            return
+        self.ui.progressBar.setVisible(True)
+        self.ui.statusLabel.setText(self._('Upgrading system'))
+        self.worker = PackageWorker('-upgrade-', "upgrade")
+        self.worker.output.connect(self.update_output)
+        self.worker.finished.connect(self.autoremove)
+        self.worker.start()
+        # draw
+        QApplication.processEvents()
+
+    def autoremove(self):
+        """
+        Request apt list upgrade
+        """
+        self.worker = PackageWorker('-autoremove-', "autoremove")
+        self.worker.output.connect(self.update_output)
+        self.worker.finished.connect(self.status_check_finished)
+        self.worker.start()
+        # draw
+        QApplication.processEvents()
+
+
+
     def showabout(self):
         """
         SHow about dialog (modal)
@@ -406,6 +498,7 @@ class HamRadioManager(QMainWindow):
         Close app
         """
         self.close()
+
 
 def main():
     parser = argparse.ArgumentParser(description="Hamradio apps install manager")
@@ -443,18 +536,19 @@ def main():
             QMessageBox.Ok
         )
 
-
-    if os.geteuid() != 0:
-        QMessageBox.warning(
-            None,
-            _("Superuser not detected!"),
-            _("Some functions requires super user capabilities"),
-            QMessageBox.Ok
-        )
+    # if os.geteuid() != 0:
+    #     QMessageBox.warning(
+    #         None,
+    #         _("Superuser not detected!"),
+    #         _("Some functions requires super user capabilities"),
+    #         QMessageBox.Ok
+    #     )
 
     window.show()
     sys.exit(app.exec_())
 
 
 if __name__ == '__main__':
+
+
     main()

@@ -42,8 +42,8 @@ class Ui_AboutDialog(object):
     def retranslateUi(self, AboutDialog):
         _translate = QtCore.QCoreApplication.translate
         AboutDialog.setWindowTitle(_translate("AboutDialog", "About"))
-        self.labelAppName.setText(_translate("AboutDialog", "Ham Radio Applications Manager - Version 1.0"))
-        self.labelCopy.setText(_translate("AboutDialog", "(c) 2025, I8ZSE Giorgio L. Rutigliano"))
+        self.labelAppName.setText(_translate("AboutDialog", "Ham Radio Applications Manager - Version 0.7"))
+        self.labelCopy.setText(_translate("AboutDialog", "(c) 2025,26 I8ZSE Giorgio L. Rutigliano"))
         self.labelWeb.setText(_translate("AboutDialog", "https://www.i8zse.it - https://github.com/grutig"))
         self.labelLicense.setText(_translate("AboutDialog", "This application is licensed under the LGPL v3 license."))
 

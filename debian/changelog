@@ -1,3 +1,9 @@
+hapmgr (0.7-1) unstable; urgency=medium
+
+  * Added new functions
+
+ -- Giorgio L. Rutigliano <giorgio@i8zse.eu>  Wed, 20 Apr 2026 12:33:02 +0200
+
 hapmgr (0.6-2) unstable; urgency=medium
 
   * Fixed wayland bug on app wrapper
